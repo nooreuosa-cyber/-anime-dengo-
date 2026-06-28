@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أنمي دنجو - مشاهدة الدونغهوا والأنمي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">أنمي دنجو</div>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="#latest">أحدث الحلقات</a>
+            <a href="#anime-list">قائمة الأنمي</a>
+            <a href="admin.html" style="color: var(--primary);">🔐 الأدمن</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="ابحث عن أنمي...">
+            <button onclick="searchAnime()">🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>شاهد أحدث حلقات الدونغهوا</h1>
+                <p>أفضل المسلسلات الصينية المترجمة بجودة عالية</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="number" id="heroEpisodes">500+</div>
+                        <div class="label">حلقة</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number" id="heroAnime">50+</div>
+                        <div class="label">مسلسل</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number">4K</div>
+                        <div class="label">جودة</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="latest" class="section">
+            <h2 class="section-title">📺 أحدث الحلقات</h2>
+            <div class="episodes-grid" id="latestEpisodes"></div>
+        </section>
+
+        <section id="anime-list" class="section">
+            <h2 class="section-title">📋 قائمة الأنمي</h2>
+            <div class="anime-grid" id="animeList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>أنمي دنجو - جميع الحقوق محفوظة © 2026</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
